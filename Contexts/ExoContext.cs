@@ -23,8 +23,11 @@ optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;"
 + "Database=ExoApi;Trusted_Connection=True;");
 // Exemplo 1 de string de conexão:
 // User
+//ID=sa;Password=admin;Server=localhost;Database=ExoApi;-
+// + Trusted_Connection=False;
 // Exemplo 2 de string de conexão:
 //
+//Server=localhost\\SQLEXPRESS;Database=ExoApi;Trusted_Connection=True;
 }
 }
 public DbSet<Projeto> Projetos { get; set; }

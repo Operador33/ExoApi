@@ -6,9 +6,11 @@ namespace Exo.WebApi.Models
 {
     public class Projeto
     {
+        internal object NomeDoProjeto;
+
         public int Id { get; set; }
-        public string Projeto_Senai_FullStack { get; set; }
-        public string Tecnologia { get; set; }
-        public bool Cursando { get; set; }
+        public string Projeto { get; set; }
+        public string Area { get; set; }
+        public object Status { get; internal set; }
     }
 }
